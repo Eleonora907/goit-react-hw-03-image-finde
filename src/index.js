@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { App } from 'components/App';
 import './index.css';
-import 'modern-normalize';
-import { Global } from 'styles/global.styles';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <>
     <App />
-    <Global/>
+    <ToastContainer autoClose={1000} />
   </>
 );
